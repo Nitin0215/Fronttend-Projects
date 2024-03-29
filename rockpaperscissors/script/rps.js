@@ -83,15 +83,13 @@ function play(userIn, systemIn) {
       }
     }
   }
-  result.innerHTML = `You : ${r}`;
+  result.innerHTML = `${r}`;
 }
 
 function reset() {
     win = 0;
     lose = 0;
     tie = 0;
-    display.innerHTML = document.getElementById('display').style.display = 'none';
-    result.innerHTML = document.getElementById('results').style.display = 'none';
     winDisplay.innerHTML = `win : ${win}`;
     loseDisplay.innerHTML = `lose : ${lose}`;
     tieDisplay.innerHTML = `tie : ${tie}`;
