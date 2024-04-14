@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/stop.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <h1>⏳<u>StopWatch</u></h1>
+        <div class="result">
+            <span id = "hours">00</span> :
+            <span id = "minutes">00</span> :
+            <span id = "seconds">00</span> :
+            <span id = "millisec">000</span>
+        </div>    
+            <button id="start" onclick = "startTimer()">▶️</button>
+            <button id="pause" onclick = "stopTimer()">⏸️</button>
+            <button id="reset" onclick="resetTimer()">🔄</button>
+    </div>
+</body> 
+<script src="script/stop.js"></script>
+</html>

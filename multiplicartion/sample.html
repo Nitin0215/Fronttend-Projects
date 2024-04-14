@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication</title>
+</head>
+<style>
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        animation: colorFade 5s infinite;
+    }
+    @keyframes colorFade {
+         0% { background-color: honeydew; }
+        50% { background-color: navajowhite; }
+        100% { background-color: rgb(180, 215, 180); }
+    }
+    .multi, h1{
+        text-align: center;
+    }
+    input{
+        width: 120px;
+        height: 30px;
+        margin: 5px;
+        box-sizing: border-box;
+    }
+    button{
+        width: 100px;
+        height: 30px;
+        margin: 10px;
+        padding: 5px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    button:hover{
+        background-color:tomato;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 2px 4px ;
+    }
+    span{
+        font-size: 20px;
+        margin: 5px;
+    }
+    
+</style>
+<body>
+    <h1>Multiplication</h1>
+    <div class = multi>
+
+            <input type="text" id= "first_number" placeholder="First_Number">
+            <span><b>&times;</b></span>
+            <input type ="text" id="second_number" placeholder="Second_Number">
+            <span><b>&equals;</b></span>
+            <input type = "number " id="result"  placeholder="Result" readonly><br>
+            <button onclick="multiple()">Multiple</button>
+            
+    </div>
+    <script>
+        function multiple() {
+            let first_number = document.getElementById("first_number").value;
+            let second_number = document.getElementById("second_number").value;
+            let result = document.getElementById("result");
+
+            if (!isNaN(first_number) && !isNaN(second_number)) {
+                    let multiplication = first_number * second_number;
+                    result.value = multiplication;
+            } 
+            else {
+                alert("Please enter a valid number");
+                document.getElementById("first_number").value = "";
+                document.getElementById("second_number").value = "";
+                document.getElementById("result").value = "";
+            }
+         }
+    </script>
+</body>
+
+</html>
