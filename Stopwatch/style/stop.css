@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1d1d1d;
+}
+
+.mainContainer{
+    text-align: center;
+    color: #fff;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0.5em;
+    text-align: center;
+    color: aqua;
+}
+.result{
+    font-size: 3em;
+    font-weight: bold;
+    padding:  30px 0px;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 3em;
+    background-color: #1d1d1d;
+}

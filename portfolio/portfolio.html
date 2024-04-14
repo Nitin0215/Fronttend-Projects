@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="/portfolio/style/portfolio.css">
+    <script src="https://kit.fontawesome.com/050928907e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi,I'm <span>Nitin</span> Ravella <br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!----------------------About Me------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="image/nitin1.png"></div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I had completed my B.Tech. in April 2023. Right now, I am learning Python Full stack Developer course.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full Stack Developer</span><br></li>
+                            <li><span>UI Designer</span><br></li>
+                            <li><span>Python Language</span><br></li>
+                            <li><span>SQL</span><br></li>
+                            <li><span>AWS</span><br></li>
+                            <li><span>TypeORM</span><br></li>
+                            <li><span>Typescript</span><br></li>
+                            <li><span>RestAPI</span><br></li>
+                            <li><span>ExpressJs</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Intership in Mahasos Info Private Limited (Nov 2023 - March 2024)</span><br></li>
+                            <li>Project on Rent-Reporting</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Amrita Sai Institute of Science and Technology</li>
+                            <li><span>2019</span><br>Sri Gayatri Junior College</li>
+                            <li><span>2017</span><br>Sri Chaitanya Techno School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------Services------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Developer</h2>
+                    <p>Frontend Serives like HTML, CSS, Javascript</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Backend Developer</h2>
+                    <p>Backend Serivers like SQL, TypeORM using Typescript, RestAPI's</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------Portfolio------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="/portfolio/image/frontend img.jpg">
+                <div class="layer">
+                    <h3>Website Design</h3>
+                    <p>HTML, CSS, Javascript</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="/portfolio/image/Backend.png">
+                <div class="layer">
+                    <h3>Backend Development</h3>
+                    <p>SQL, TypeORM using Typescript, RestAPI's</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+    <!------------------------Contact------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                     <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>nitinravella7@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 9492270266</p>
+                    <div class="social-icon">
+                        <a href="https://github.com/Nitin0215"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="/portfolio/image/NITIN RAVELLA.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <h1 class="sub-title">Get In Touch</h1>
+                    <form>
+                        <input type="text" name="Name"  placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Nitin<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script src="script/portfolio.js"></script>
+</body>
+</html>
